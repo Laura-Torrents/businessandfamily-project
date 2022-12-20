@@ -144,39 +144,36 @@
         <h2>Find activities for my family:</h2>
         <form>
             <div class="form-row align-items-center">
-                <div class="col-auto my-1">
+                <div class="col-auto my-1" id="ChooseCity">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">Where are you travelling?</label>
-                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                        <option selected>Choose...</option>
-                        <option value="1">London</option>
-                        <option value="2">Barcelona</option>
-                        <option value="3">Rome</option>
+                    <select name="Choose City" class="custom-select mr-sm-2" id="inlineFormCustomSelect" onchange="searchFilter()">
+                        <option selected value="all">Choose...</option>
+                        <option value="London">London</option>
+                        <option value="Barcelona">Barcelona</option>
+                        <option value="Rome">Rome</option>
                     </select>
                 </div>
 
-                <div class="col-auto my-1">
+                <div class="col-auto my-1" id="ChooseEvent">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">Event</label>
-                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                        <option selected>Choose...</option>
-                        <option value="1">Conference</option>
-                        <option value="2">Business meeting</option>
-                        <option value="3">Three</option>
+                    <select name="Choose Event" class="ChooseEvent" class="custom-select mr-sm-2" id="inlineFormCustomSelect" onchange="searchFilter()">
+                        <option selected value="all">Choose...</option>
+                        <option value="Conference">Conference</option>
+                        <option value="Business">Business meeting</option>
+                        <option value="Other">Other</option>
                     </select>
                 </div>
 
-                <div class="col-auto my-1">
+                <div class="col-auto my-1" id="ChooseActivity">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">Type of activity</label>
-                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                        <option selected>Choose...</option>
-                        <option value="1">Guided tour</option>
-                        <option value="2">Outdoor activity</option>
-                        <option value="3">Three</option>
+                    <select name="Choose Activity" class="custom-select mr-sm-2" id="inlineFormCustomSelect" onchange="searchFilter()">
+                        <option selected value="all">Choose...</option>
+                        <option value="Guided Tour">Guided tour</option>
+                        <option value="Outdoor">Outdoor activity</option>
+                        <option value="Other">Other</option>
                     </select>
                 </div>
 
-                <div class="col-auto my-1">
-                    <button type="submit" class="btn btn-primary">Search</button>
-                </div>
             </div>
         </form>
     </section>
@@ -186,7 +183,8 @@
 
         <h2>Activities near me:</h2>
         <div class="cards-container">
-            <div class="row">    
+            <div class="row">  
+                <div class="col London">  
                 <div class="card mx-auto" style="width: 18rem;">
                     <img src="https://familydestinationsguide.com/wp-content/uploads/2020/11/Madame-Tussauds-London.jpg.webp"
                         class="card-img-top" alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPcC7Y242k-AoZSHdH1Wy7DAc3MQ4Broi11g&usqp=CAU">
@@ -196,7 +194,8 @@
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
-
+                </div>
+                <div class="col Italy"> 
                 <div class="card mx-auto" style="width: 18rem;">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1200px-Colosseo_2020.jpg"
                         class="card-img-top" alt="https://www.history.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTkwODIxMzcwNDI5NDQ5OTEw/gettyimages-1081719544.jpg">
@@ -206,7 +205,8 @@
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
-
+                </div>
+                <div class="col Barcelona"> 
                 <div class="card mx-auto" style="width: 18rem;">
                     <img src="https://familydestinationsguide.com/wp-content/uploads/2020/11/Bas%C3%ADlica-La-Sagrada-Familia.jpg.webp"
                         class="card-img-top" alt="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/56/2a/e7/hay-construcciones-monumentale.jpg?w=500&h=400&s=1">
@@ -215,6 +215,7 @@
                         <p class="card-text">The Basílica La Sagrada Familia is a one-of-a-kind temple with a rich history regarding its foundation and purpose - a monument built by the people for the people.</p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
