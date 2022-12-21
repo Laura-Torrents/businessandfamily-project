@@ -20,10 +20,10 @@ var searchFilter = () => {
 
 //include the same header.html and footer.html for each page
 
-jQuery(document).ready(function($){
-      $("#headerhtml").load("header.html");
-      $("#footerhtml").load("footer.html");
-  });
+//jQuery(document).ready(function($){
+//      $("#headerhtml").load("header.html");
+//      $("#footerhtml").load("footer.html");
+//  });
 
 /* expand details working but not used
 
