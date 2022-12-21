@@ -24,7 +24,7 @@
     <script>
      $(document).ready(function($){
   $('#headerhtml').load('header.html', function () {
-    $('.nav a[href="' + window.location.pathname + '"]', this).parent().addClass('active').siblings().removeClass('active');
+    $('.nav-item a[href="' + window.location.pathname + '"]', this).parent().addClass('nav-link active').siblings().removeClass('nav-link active');
   }); 
   $('#footerhtml').load('footer.html'); 
 });
