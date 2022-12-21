@@ -29,14 +29,71 @@
 </head>
 
 <body>
-     <!-- header -->
-     <header>
-      <div id="headerhtml">
-          <!-- a javascript module is replacing this empty area with header.html -->
-       </div>
-      </header>
+  <!-- Header -->
+  
+      <!-- Account links -->
+      <ul class="nav justify-content-end me-4">
+         <li class="nav-item">
+             <a class="nav-link" href="#">Sign up</a>
+         </li>
+         <li class="nav-item">
+             <a class="nav-link" href="#"> My Account</a>
+         </li>
+     </ul>
+  
+     <!-- Main navigation menu -->
+     <nav class="navbar sticky-top navbar-expand-lg bg-light mb-2">
+         <div class="container-fluid">
+             <a class="navbar-brand" href="index.html">
+                 <img src="./images/businessandfamily.png" width="200px" alt="Business and family">
+             </a>
+            
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                 aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+  
+                 
+             </button>
+             
+             <div class="collapse navbar-collapse justify-content-between me-4" id="navbarSupportedContent">
+                 <ul class="navbar-nav ms-auto  mb-2 mb-lg-0">
+                     <li class="nav-item">
+                         <a class="nav-link" aria-current="page" href="index.html" title="Business and family">Home</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" aria-current="page" href="#">Join</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" aria-current="page" href="#">Organise</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" aria-current="page" href="#">Solo travelers</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link active" aria-current="page" href="about.html" title="About Us">About us</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                     </li>
+                 </ul>
+  
+             </div>
+         </div>
+     </nav>
+  
+
+<!-- Breadcrumbs -->
+<div class="container-fluid">
+  <nav aria-label="breadcrumb">
+     <ol class="breadcrumb">
+       <li class="breadcrumb-item active"  title="About Us"aria-current="page">About Us</li>
+     </ol>
+   </nav>
+</div>
 
  <!-- About Us -->
+ 
 
     <section class="about-us">
 <h1 class="title">About us</h1>
@@ -60,57 +117,6 @@
 <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
 
 </section>
-
-
-
-
-    <!-- Contact section -->
-
-    <div class="contact-container" id="contact-us">
-        <div class="content">
-          <div class="left-side">
-            <div class="address details">
-              <i class="fas fa-map-marker-alt"></i>
-              <div class="topic">Address</div>
-              <div class="text-one">Oxford 78 </div>
-              <div class="text-two">London, UK</div>
-            </div>
-            <div class="phone details">
-              <i class="fas fa-phone-alt"></i>
-              <div class="topic">Phone</div>
-              <div class="text-one">+0044 3578 357 357</div>
-              <div class="text-two">+0044 3535 357 357</div>
-            </div>
-            <div class="email details">
-              <i class="fas fa-envelope"></i>
-              <div class="topic">Email</div>
-              <div class="text-one">bussiness-trips@gmail.com</div>
-              <div class="text-two">info@bussiness-trips.com</div>
-            </div>
-          </div>
-          <div class="right-side">
-            <div class="topic-text">Send us a message</div>
-            <p>If you need further details or you wish to organize a customized experience, please send us a message.</p>
-          <form action="#">
-            <div class="input-box">
-              <input type="text" placeholder="Enter your name">
-            </div>
-            <div class="input-box">
-              <input type="text" placeholder="Enter your email">
-            </div>
-
-            <div class="input-box message-box">
-              <input type="text" placeholder="Write your message">
-            </div>
-            <div class="button">
-              <input type="button" value="Send Now">
-            </div>
-          </form>
-        </div>
-        </div>
-      </div>
-      <h5 class="copyright">Copyright ©2022 CFG. All rights reserved.</h5>
-
 
     <!-- Footer -->
 <div id="footerhtml">

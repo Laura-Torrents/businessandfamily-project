@@ -29,65 +29,102 @@
 </head>
 
 <body>
-   
-         <!-- header -->
-         <header>
-<div id="headerhtml">
-    <!-- a javascript module is replacing this empty area with header.html -->
- </div>
-</header>
+<!-- Header -->
+
+    <!-- Account links -->
+    <ul class="nav justify-content-end me-4">
+       <li class="nav-item">
+           <a class="nav-link" href="#">Sign up</a>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="#"> My Account</a>
+       </li>
+   </ul>
+
+   <!-- Main navigation menu -->
+   <nav class="navbar sticky-top navbar-expand-lg bg-light mb-2">
+       <div class="container-fluid">
+           <a class="navbar-brand" href="index.html">
+               <img src="./images/businessandfamily.png" width="200px" alt="Business and family">
+           </a>
+          
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+               aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+
+               
+           </button>
+           
+           <div class="collapse navbar-collapse justify-content-between me-4" id="navbarSupportedContent">
+               <ul class="navbar-nav ms-auto  mb-2 mb-lg-0">
+                   <li class="nav-item">
+                       <a class="nav-link active" aria-current="page" href="index.html" title="Business and family">Home</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" aria-current="page" href="#">Join</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" aria-current="page" href="#">Organise</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" aria-current="page" href="#">Solo travelers</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" aria-current="page" href="about.html" title="About Us">About us</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                   </li>
+               </ul>
+
+           </div>
+       </div>
+   </nav>
 
     
 
     
 
     <!-- Carousel -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade carousel-dark " data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://images.hornblower.com/1200x840/images/tours/hexcouk/35dd95ad-c7be-4705-9ea7-ed43d6c1b203.jpeg"
-                    class="d-block w-80" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h4>First slide label</h4>
-                    <p>Some representative placeholder content for the first slide.</p>
-                </div>
+          <div class="carousel-item active">
+            <img src="./images/family.jpg" class="d-block w-100" alt="Business trip with your family">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="text-dark bg-light opacity-50">Business trip with your family</h2>
+              <p class="text-dark bg-light opacity-50">Our mision is make your family happy while you are working.</p>
             </div>
-            <div class="carousel-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Colosseum_in_Rome%2C_Italy_-_April_2007.jpg/1200px-Colosseum_in_Rome%2C_Italy_-_April_2007.jpg?20070506202935"
-                    class="d-block w-80" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h4>Second slide label</h4>
-                    <p>Some representative placeholder content for the second slide.</p>
-                </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/madrid-free-tour.jpg" class="d-block w-100" alt="Business trip - Solo travelers">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="text-dark bg-light opacity-50">Business trip - Solo Traveler</h2>
+              <p class="text-dark bg-light opacity-50">We offer you lots of activities after your busy day</p>
             </div>
-            <div class="carousel-item">
-                <img src="https://images.hornblower.com/1200x840/images/tours/hexcouk/35dd95ad-c7be-4705-9ea7-ed43d6c1b203.jpeg"
-                    class="d-block w-80" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h4>Third slide label</h4>
-                    <p>Some representative placeholder content for the third slide.</p>
-                </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/family_gathering.jpg" class="d-block w-100" alt="Organise a trip">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="text-dark bg-light opacity-50">Organise a trip for other busy business owners</h2>
+              <p class="text-dark bg-light opacity-50">Let the others join your activity or event and talk about related interests</p>
             </div>
+          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
         </button>
-    </div>
+      </div>
 
      <!-- Breadcrumbs -->
      <div class="container-fluid">
