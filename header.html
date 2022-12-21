@@ -22,7 +22,7 @@
         $("#footerhtml").load("footer.html");
     }); </script>-->
     <script>
-    $(function(){
+    $(document).ready(function($){
   $('#headerhtml').load('header.html', function () {
     $('.nav a[href="' + window.location.pathname + '"]', this).parent().addClass('active').siblings().removeClass('active');
   }); 
