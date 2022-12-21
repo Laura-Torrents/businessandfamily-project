@@ -19,6 +19,25 @@ var searchFilter = () => {
 }
 
 
+/* expand details working but not used
+
+
+$(".dheader").click(function () {
+
+    $dheader = $(this);
+    //getting the next element
+    $dcontent = $dheader.next();
+    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+    $dcontent.slideToggle(500, function () {
+        //execute this after slideToggle is done
+        //change text of header based on visibility of content div
+        $dheader.text(function () {
+            //change text based on condition
+            return $dcontent.is(":visible") ? "Details" : "See Details";
+        });
+    });
+    
+});*/
 
 
 
