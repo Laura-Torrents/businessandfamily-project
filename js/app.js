@@ -18,6 +18,26 @@ var searchFilter = () => {
     }
 }
 
+//filter by event - and search by event//
+
+var searchFilter2 = () => {
+    let selectedEvent = document.getElementById("filterByEvent").value;
+    console.log(selectedEvent);
+    const input = document.querySelector(".form-control");
+    const cards = document.getElementsByClassName("col");
+    console.log(cards[1]);
+
+    let textBox = input.value;
+    for (let i = 0; i < cards.length; i++) {
+        let title = cards[i].querySelector(".card-body");
+        if ((cards[i].classList.contains(selectedEvent) || selectedEvent == "") && title.innerText.toLowerCase().indexOf(textBox.toLowerCase()) > -1) {
+            cards[i].classList.remove("d-none");
+        } else {
+            cards[i].classList.add("d-none");
+        }
+    }
+}
+
 //include the same header.html and footer.html for each page
 
 //jQuery(document).ready(function($){

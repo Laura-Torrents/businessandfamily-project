@@ -120,21 +120,21 @@
           <div class="carousel-item active">
            <a  href="./join-form.html"> <img src="./images/family.jpg" class="d-block w-100" alt="Business trip with your family">
             <div class="carousel-caption d-none d-md-block">
-              <h2 class="text-dark bg-light opacity-50">Business trip with your family</h2>
+              <h1 class="text-dark bg-light opacity-50">Business trip with your family</h1>
               <p class="text-dark bg-light opacity-50">Our mision is make your family happy while you are working.</p>
             </div></a>
           </div>
           <div class="carousel-item">
            <a href="./solo-form.html"><img src="./images/madrid-free-tour.jpg" class="d-block w-100" alt="Business trip - Solo travelers">
             <div class="carousel-caption d-none d-md-block">
-              <h2 class="text-dark bg-light opacity-50">Business trip - Solo Traveler</h2>
+              <h1 class="text-dark bg-light opacity-50">Business trip - Solo Traveler</h1>
               <p class="text-dark bg-light opacity-50">We offer you lots of activities after your busy day</p>
             </div></a>
           </div>
           <div class="carousel-item">
             <a href="./organise-form.html"><img src="./images/family_gathering.jpg" class="d-block w-100" alt="Organise a trip" >
             <div class="carousel-caption d-none d-md-block">
-              <h2 class="text-dark bg-light opacity-50">Organise a trip for other busy business owners</h2>
+              <h1 class="text-dark bg-light opacity-50">Organise a trip for other busy business owners</h1>
               <p class="text-dark bg-light opacity-50">Let the others join your activity or event and talk about related interests</p>
             </div></a>
           </div>
@@ -156,8 +156,12 @@
 
     <div class="container-fluid pt-2">
         <h2>Find activities for my family:</h2>
-        <div class="row mt-2">
-            <div class="col-12 mb-3 col-md-6">
+         <!-- Filter city -->
+        <!-- remember old class --- <div class="row mt-2">
+            remember old class ---  <div class="col-12 mb-3 col-md-6"-->
+       <div class="row mt-2 row-cols-1 row-cols-md-4">
+            <div class="col-4 mb-3">
+                <label class="me-sm-2 pb-2">Choose city:</label>
                 <select class="form-select" id="filterByCity" onchange="searchFilter()">
                     <option value="" selected>Filter by City</option>
                     <option value="london">London</option>
@@ -165,9 +169,30 @@
                     <option value="rome">Rome</option>
                 </select>
             </div>
-            <div class="col-12 col-md-6 mb-3">
+            <div class="col-4 mb-3">
+                <label class="me-sm-2 pb-2">Type city:</label>
                 <input type="text" class="form-control" placeholder="Search cities" aria-label="Search cards"
                     onkeyup="searchFilter()">
+
+            </div>
+
+            <!-- Filter Event -->
+        
+    
+            <div class="col-4 mb-3">
+                <label class="me-sm-2 pb-2">Choose Event:</label>
+                <select class="form-select" id="filterByEvent" onchange="searchFilter2()">
+                    <option value="" selected>Filter by Event</option>
+                    <option value="conference">Conference</option>
+                    <option value="afterwork">Afterwork</option>
+                    <option value="workshop">Workshop</option>
+                    <option value="tourism">Tourism</option>
+                </select>
+            </div>
+            <div class="col-4 mb-3">
+                <label class="me-sm-2 pb-2">Type Event:</label>
+                <input type="text" class="form-control" placeholder="Search Event" aria-label="Search cards"
+                    onkeyup="searchFilter2()">
 
             </div>
 
@@ -175,7 +200,7 @@
         </div>
 
         <div class="row row-cols-1 row-cols-md-3 g-4 gridCards p-4">
-            <div class="col london">
+            <div class="col london tourism">
                 <div class="card h-100">
                     <img src="./images/Madame-Tussauds-London.jpg"
                         class="card-img-top" style="width:100% ; height:15vw ; object-fit:cover;" alt="Madame Tussaud London">
@@ -231,7 +256,7 @@
                                 </div>
                              -->
             
-            <div class="col barcelona">
+            <div class="col barcelona workshop">
                 <div class="card h-100">
                     <img src="./images/sagrada_familia.jpg"
                         class="card-img-top" style="width:100% ; height:15vw ; object-fit:cover;" alt="Sagrada Familia Barcelona">
