@@ -26,6 +26,7 @@ var searchFilter2 = () => {
     const input = document.querySelector(".form-control");
     const cards = document.getElementsByClassName("col");
     console.log(cards[1]);
+    
 
     let textBox = input.value;
     for (let i = 0; i < cards.length; i++) {
@@ -36,6 +37,10 @@ var searchFilter2 = () => {
             cards[i].classList.add("d-none");
         }
     }
+    function printSearch() {
+        document.getElementById("filterByEvent").value = selectedEvent();
+    }
+    printSearch();
 }
 
 //include the same header.html and footer.html for each page
