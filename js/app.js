@@ -6,15 +6,25 @@ var searchFilter = () => {
     const input = document.querySelector(".form-control");
     const cards = document.getElementsByClassName("col");
     console.log(cards[1]);
+    document.getElementById("printingSearch").textContent = "You have selected " + selectedCity + " city.";
+    if (selectedCity === "") {
+        document.getElementById("printingSearch").textContent= "";
+    } 
 
     let textBox = input.value;
     for (let i = 0; i < cards.length; i++) {
         let title = cards[i].querySelector(".card-body");
         if ((cards[i].classList.contains(selectedCity) || selectedCity == "") && title.innerText.toLowerCase().indexOf(textBox.toLowerCase()) > -1) {
             cards[i].classList.remove("d-none");
+            
         } else {
             cards[i].classList.add("d-none");
+            
+        
+        
+        
         }
+       
     }
 }
 
@@ -26,6 +36,12 @@ var searchFilter2 = () => {
     const input = document.querySelector(".form-control");
     const cards = document.getElementsByClassName("col");
     console.log(cards[1]);
+    document.getElementById("printingSearch2").textContent = "You have selected " + selectedEvent + " event.";
+    if (selectedEvent === "") {
+        document.getElementById("printingSearch2").textContent= "";
+    }
+   
+    
     
 
     let textBox = input.value;
@@ -33,14 +49,17 @@ var searchFilter2 = () => {
         let title = cards[i].querySelector(".card-body");
         if ((cards[i].classList.contains(selectedEvent) || selectedEvent == "") && title.innerText.toLowerCase().indexOf(textBox.toLowerCase()) > -1) {
             cards[i].classList.remove("d-none");
+            
         } else {
             cards[i].classList.add("d-none");
+           
         }
+     
+
+
     }
-    function printSearch() {
-        document.getElementById("filterByEvent").value = selectedEvent();
-    }
-    printSearch();
+   
+    
 }
 
 //include the same header.html and footer.html for each page
