@@ -1,5 +1,5 @@
 # businessandfamily-project
-First code Gils project
+Code First Girls Project.
 The main objective of this website is to help people or business owners who are travelling for work, either alone or with their families.
 While they are in a meeting, event or congress far from their homes, their families can also enjoy the buisness trip joining activities or events matching their interests.
 In this website the business owner can choose if it is a solo trip or family trip and then choose the activities which they like the most.
