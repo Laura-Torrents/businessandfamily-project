@@ -11,4 +11,5 @@ Project steps:
 - Used bootstrap framework and javascript for functions, structure and filter
 - keeped design consistency and responsiveness
 - Used free stock images related to each interest.
+- Visit page here:  https://laura-torrents.github.io/businessandfamily-project/
  
